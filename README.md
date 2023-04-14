@@ -1,5 +1,3 @@
-# encriptador
+<h1>Challenge ONE - Encriptador</h1>
 
-<h1>Challenge de Alura - Encriptador</h1>
-
-<a href="https://amatojoaquin.github.io/encriptador/">Visita mi pagina</a>
+<a href="https://amatojoaquin.github.io/encriptador/"><strong>Visita el proyecto</strong></a>
