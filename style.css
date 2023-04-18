@@ -425,6 +425,17 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+	main .contenedor .contenedorEntrada .contenedorInput .smallBotones {
+		margin-left: 0em;
+	}
+
+	main .contenedor .contenedorSalida {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 0.4em;
+	}
+
 	main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones {
 		text-align: center;
 		width: 10em;
