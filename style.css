@@ -1,4 +1,432 @@
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+	font-family: "Comfortaa", cursive;
+	background: #acbbc9;
 }
-  
+
+main {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	flex-direction: row;
+}
+
+main .contenedor {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	flex-direction: row;
+}
+
+main .contenedor .contenedorLogo {
+	width: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .contenedor .contenedorLogo img {
+	align-self: start;
+	margin-top: 1em;
+	width: 1.5em;
+}
+
+main .contenedor .contenedorEntrada {
+	width: 60vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .contenedor .contenedorEntrada .contenedorInput {
+	width: 50vw;
+	height: 75vh;
+}
+
+main .contenedor .contenedorEntrada .contenedorInput textarea {
+	width: 50vw;
+	height: 60vh;
+	outline: none;
+	resize: none;
+	background: inherit;
+	border: none;
+	color: #0a3871;
+	font-size: 1.5em;
+	margin-top: 1em;
+	font-family: "Comfortaa", cursive;
+}
+
+main .contenedor .contenedorEntrada .contenedorInput textarea::placeholder {
+	font-family: "Comfortaa", cursive;
+	font-size: 1em;
+	color: #0a3871;
+}
+
+main .contenedor .contenedorEntrada .contenedorInput .smallBotones {
+	width: 50vw;
+	height: 13vh;
+	text-align: left;
+}
+
+main .contenedor .contenedorEntrada .contenedorInput .smallBotones .small img {
+	width: 0.8em;
+	margin-left: 1.5em;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion {
+	width: 50vw;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.boton {
+	border: 1px solid #0a3871;
+	margin: 1.5em;
+	padding: 1.5em;
+	color: #ffffff;
+	font-weight: 600;
+	width: 21vw;
+	background: #0a3871;
+	transition: background 50ms;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.boton:hover {
+	background: #072b61;
+	border: 1px solid #072b61;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.boton:active {
+	background: #d8dfe8;
+	color: #0a3871;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.botones {
+	background: #ffffff;
+	width: 21vw;
+	padding: 1.5em;
+	margin: 1.5em;
+	border: 1px solid #0a3871;
+	color: #0a3871;
+	font-weight: 600;
+}
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.botones:hover {
+	background: #d8dfe8;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	.botones:active {
+	background: #0a3871;
+	color: #ffffff;
+}
+
+main
+	.contenedor
+	.contenedorEntrada
+	.contenedorInput
+	.smallBotones
+	.botonesAccion
+	button {
+	background: #0a3871;
+	border: none;
+	font-family: "Comfortaa", cursive;
+	font-weight: 500;
+	border-radius: 1.5em;
+	padding: 1em 3em;
+	margin: 1em;
+}
+
+main .contenedor .contenedorSalida {
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .contenedor .contenedorSalida .sinMensaje {
+	border: 1px solid #ffffff;
+	box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	-webkit-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	-moz-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	border-radius: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 23vw;
+	background: #ffffff;
+	height: 90vh;
+}
+
+main .contenedor .contenedorSalida .sinMensaje .imagenMuneco img {
+	width: 20vw;
+}
+
+main .contenedor .contenedorSalida .sinMensaje .imagenMuneco h2 {
+	font-family: "Comfortaa", cursive;
+	font-weight: 600;
+	margin: 1em;
+}
+
+main .contenedor .contenedorSalida .sinMensaje .imagenMuneco small {
+	font-family: "Comfortaa", cursive;
+	font-size: 0.9em;
+}
+
+main .contenedor .contenedorSalida .hayMensaje {
+	border: 1px solid #ffffff;
+	box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	-webkit-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	-moz-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
+	border-radius: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	width: 23vw;
+	background: #ffffff;
+	height: 90vh;
+	display: none;
+}
+
+main .contenedor .contenedorSalida .hayMensaje .textoOutput {
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	max-height: 60vh;
+	overflow: auto;
+}
+
+main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones {
+	background: #ffffff;
+	width: 15vw;
+	padding: 1.5em;
+	margin: 1.5em;
+	border: 1px solid #0a3871;
+	color: #0a3871;
+	font-weight: 600;
+	font-family: "Comfortaa", cursive;
+	border-radius: 1.5em;
+	margin-bottom: 2.8em;
+}
+
+main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones:hover {
+	background: #d8dfe8;
+}
+
+main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones:active {
+	background: #0a3871;
+	color: #ffffff;
+}
+
+footer {
+	width: 100vw;
+	height: 5vh;
+	text-align: center;
+}
+
+@media screen and (max-width: 1059px) {
+	main {
+		flex-direction: column;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	main .contenedor .contenedorLogo {
+		width: 100vw;
+		justify-content: start;
+	}
+
+	main .contenedor .contenedorLogo img {
+		margin-left: 3.5em;
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+
+	main .contenedor .contenedorEntrada {
+		width: 100vw;
+		height: 70vh;
+		margin-bottom: 10em;
+	}
+
+	main .contenedor .contenedorEntrada .contenedorInput {
+		width: 90vw;
+		height: 70vh;
+	}
+	main .contenedor .contenedorEntrada .contenedorInput textarea {
+		height: 60vh;
+	}
+
+	main .contenedor .contenedorEntrada .contenedorInput .smallBotones {
+		width: 90vw;
+		height: 20vh;
+		margin-top: 2em;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion {
+		width: 90vw;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion
+		.boton {
+		width: 40vw;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion
+		.botones {
+		width: 40vw;
+		margin-left: 1em;
+	}
+
+	main .contenedor .contenedorEntrada .contenedorInput textarea {
+		height: 60vh;
+	}
+
+	main .contenedor .contenedorSalida {
+		width: 100vw;
+		height: 30vh;
+		margin-bottom: 1em;
+	}
+
+	main .contenedor .contenedorSalida .sinMensaje {
+		width: 85vw;
+		height: 25vh;
+	}
+
+	main .contenedor .contenedorSalida img {
+		display: none;
+	}
+
+	main .contenedor .contenedorSalida .hayMensaje {
+		width: 85vw;
+		height: 40vh;
+		display: none;
+	}
+
+	footer {
+		margin-top: 22em;
+	}
+
+	footer .textoCopy {
+		margin-top: 20em;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	main .contenedor .contenedorLogo img {
+		margin-left: 2.2em;
+		width: 2em;
+	}
+
+	main .contenedor .contenedorEntrada {
+		margin-top: 4em;
+	}
+
+	main .contenedor .contenedorEntrada .contenedorInput {
+		margin-bottom: 10em;
+	}
+
+	main .contenedor .contenedorEntrada .contenedorInput .smallBotones {
+		margin-bottom: 2em;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion {
+		margin-bottom: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion
+		.boton {
+		margin-bottom: 0.1em;
+		width: 84vw;
+	}
+
+	main
+		.contenedor
+		.contenedorEntrada
+		.contenedorInput
+		.smallBotones
+		.botonesAccion
+		.botones {
+		margin-left: 1.5em;
+		width: 84vw;
+	}
+
+	footer {
+		margin-top: 30em;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones {
+		text-align: center;
+		width: 10em;
+	}
+}

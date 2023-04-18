@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="Imagenes/candado-icono.png">
-        <title>Challenge Encriptador</title>
-    </head>
-    <header>
-
-    </header>
-    <body>
-
-    </body>
-    <footer>
-
-    </footer>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="Img/iconoPagina.svg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Challenge Encriptador</title>
+	</head>
+	<body>
+		<main>
+			<div class="contenedor">
+				<div class="contenedorLogo">
+					<img src="Img/logoAlura.svg" alt="Logo Alura" class="imagenLogo" />
+				</div>
+				<div class="contenedorEntrada">
+					<div class="contenedorInput">
+						<textarea
+							name="texto-original"
+							id="texto-original"
+							placeholder="Ingrese su texto aquí"
+							class="textoOriginal"
+							pattern="[a-z ]*"
+							oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"
+							required
+						></textarea>
+						<div class="smallBotones">
+							<div class="small">
+								<small
+									><img src="Img/iconoAtencion.svg" alt="Icono de alerta" />
+									Solo letras minúsculas y sin acento</small
+								>
+							</div>
+							<div class="botonesAccion">
+								<button class="boton">Encriptar</button>
+								<button class="botones">Desencriptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contenedorSalida">
+					<div class="sinMensaje">
+						<div class="imagenMuneco">
+							<img src="Img/Muneco.svg" alt="Muñeco" />
+							<h2>Ningún mensaje fue encontrado</h2>
+							<small
+								>Ingresa el texto que desees encriptar o desencriptar</small
+							>
+						</div>
+					</div>
+					<div class="hayMensaje">
+						<div class="textoOutput">
+							<h3>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Cupiditate fugiat labore consectetur qui maxime, nulla beatae.
+								At, maiores. Vero aspernatur consequatur amet ratione ipsa.
+								Quidem omnis eum amet aliquid, saepe unde animi, vitae ea
+								similique quibusdam magni. Quaerat expedita aliquid dolores
+								perspiciatis tempore molestiae, cum atque ab doloremque tempora
+								accusamus voluptas. Libero fugiat eius temporibus architecto
+								eaque recusandae molestiae adipisci deserunt, eum facere minima
+								quos! Totam assumenda nemo modi magnam, nulla, quisquam
+								voluptatem ducimus saepe, vitae soluta repellendus sint porro ut
+								quae rem iure laudantium? Sit maiores magni quasi corrupti vitae
+								deleniti. Laborum saepe quae quos maiores aliquam molestiae
+								consequuntur.
+							</h3>
+						</div>
+						<div class="botonCopiar">
+							<button class="botones">Copiar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="textoCopy">
+				<small>&copy Copyright - Joaquin Amato</small>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
