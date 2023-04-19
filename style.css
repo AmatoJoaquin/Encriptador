@@ -215,14 +215,13 @@ main .contenedor .contenedorSalida .hayMensaje {
 	-webkit-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
 	-moz-box-shadow: 0em 1.2em 1.9em 0em #0a387199;
 	border-radius: 1.5em;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
 	width: 23vw;
 	background: #ffffff;
 	height: 90vh;
-	display: none;
 }
 
 main .contenedor .contenedorSalida .hayMensaje .textoOutput {
@@ -230,7 +229,7 @@ main .contenedor .contenedorSalida .hayMensaje .textoOutput {
 	margin-left: 1em;
 	margin-right: 1em;
 	max-height: 60vh;
-	overflow: auto;
+	overflow-y: hidden;
 }
 
 main .contenedor .contenedorSalida .hayMensaje .botonCopiar .botones {
@@ -356,6 +355,10 @@ footer {
 		width: 85vw;
 		height: 40vh;
 		display: none;
+	}
+
+	main .contenedor .contenedorSalida .hayMensaje .textoOutput {
+		overflow: auto;
 	}
 
 	footer {
